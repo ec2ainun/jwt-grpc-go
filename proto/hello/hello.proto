@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package hello;
+option go_package = "hellopb";
+
+message ReqGreet { string name = 1; }
+
+message RespGreet { string message = 1; }
+
+message ReqPrimeDecompose { int64 number = 1; }
+
+message RespPrimeDecompose { int64 prime_factor = 1; }
+
+message ReqComputeAverage { int32 number = 1; }
+
+message RespComputeAverage { double average = 1; }
+
+message ReqFindMax { int32 number = 1; }
+
+message RespFindMax { int32 max_number = 1; }
+
+service HelloService {
+  // Unary
+  rpc Greet(ReqGreet) returns (RespGreet);
+
+  // Server Stream
+  rpc PrimeDecompose(ReqPrimeDecompose) returns (stream RespPrimeDecompose) {};
+
+  // Client Stream
+  rpc ComputeAverage(stream ReqComputeAverage) returns (RespComputeAverage) {};
+
+  // Bi Directional Stream
+  rpc FindMax(stream ReqFindMax) returns (stream RespFindMax) {};
+}

@@ -1,0 +1,17 @@
+{
+  "CN": "admin",
+  "hosts": [""],
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+  "names": [
+    {
+      "C": "ID",
+      "L": "Jakarta",
+      "O": "Ainun Inc",
+      "OU": "R&D",
+      "ST": "East Java"
+    }
+  ]
+}

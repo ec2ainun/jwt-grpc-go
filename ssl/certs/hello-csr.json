@@ -1,0 +1,17 @@
+{
+  "CN": "hello.algo.fit",
+  "hosts": ["127.0.0.1", "hello.algo.fit", "hello.default.svc.cluster.local"],
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+  "names": [
+    {
+      "C": "ID",
+      "L": "Jakarta",
+      "O": "Ainun Inc",
+      "OU": "R&D",
+      "ST": "East Java"
+    }
+  ]
+}

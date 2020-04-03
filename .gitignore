@@ -1,0 +1,24 @@
+**/vendor/
+**/.ipynb_checkpoints/
+**/env
+**/node_modules/
+**/.DS_Store
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Optional npm cache directory
+.npm
+.cache
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class

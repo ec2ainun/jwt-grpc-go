@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package auth;
+option go_package = "authpb";
+
+message ReqLogin {
+  string username = 1;
+  string password = 2;
+}
+
+message RespLogin { string token = 1; }
+
+service AuthService {
+  // Unary
+  rpc Login(ReqLogin) returns (RespLogin);
+}
