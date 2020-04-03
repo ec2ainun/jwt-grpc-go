@@ -40,10 +40,10 @@ This repo aim to showcase how to implementation JWT in gRPC Golang, as well as U
 
 - **Note** : it Will make RPC call to Auth and Hello Service
 
-#### **Lastly, Uncomment following code to playing around with gRPC Potential**
+#### **Lastly, Uncomment following code in client/main.go to playing around with gRPC Potential **
 
 ```go
-    // activateServerStream(clientHello)
+	// activateServerStream(clientHello)
 	// activateClientStream(clientHello)
 	// activateBiDiStream(clientHello)
 ```
